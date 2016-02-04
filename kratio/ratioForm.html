@@ -1,0 +1,91 @@
+	<div id="content">
+	<div id="left">
+		<div id="Basic" class="info">
+			<form action='/predictions' method='POST'>
+ <table align=center>
+			<th colspan="3">Complete the form below as best you can</th>
+			<tr>
+				<td>
+  <br>
+  Height (inches):
+  <input type="number" name="height_inches" required>
+  <br>
+  Weight (pounds):
+  <input type="number" name="weight_pounds" required>
+  <br>
+  Age:
+  <input type="number" name="age_years" required>
+  <br>
+  Jacket Size:
+  <input type="number" name="jacket_size" value="-1">
+  <br>
+  Jacket Length:
+  <input type="number" name="jacket_length" value="-1">
+  <br>
+  Neck:
+  <input type="number" name="shirt_neck_inches" value="-1">
+  <br>
+  Sleeve:
+  <input type="number" name="shirt_sleeve_inches" value="-1">
+  <br>
+  Waist:
+  <input type="number" name="pant_waist_inches" value="-1">
+  <br>
+  Inseam Length:
+  <input type="number" name="pant_inseam_inches" value="-1">
+  <br>
+</td>
+<td>
+  <fieldset>
+    <legend>T Shirt Size:</legend>
+    <input type="radio" name="t_shirt_size" value='1'>XS
+    <br>
+    <input type="radio" name="t_shirt_size" value='2'>
+    <br>
+    <input type="radio" name="t_shirt_size" value='3'>S
+    <br>
+    <input type="radio" name="t_shirt_size" value='4'>
+    <br>
+    <input type="radio" name="t_shirt_size" value='5' checked>M
+    <br>
+    <input type="radio" name="t_shirt_size" value='6'>
+    <br>
+    <input type="radio" name="t_shirt_size" value='7'>L
+    <br>
+    <input type="radio" name="t_shirt_size" value='8'>
+    <br>
+    <input type="radio" name="t_shirt_size" value='9'>XL
+    <br>
+    <input type="radio" name="t_shirt_size" value='10'>
+    <br>
+    <input type="radio" name="t_shirt_size" value='11'>XXL
+  <br>
+  </fieldset>  
+</td>
+<td>
+  <fieldset>
+    <legend>Build:</legend>
+    <input type="radio" name="build" value="average" checked>Average
+    <br>
+    <input type="radio" name="build" value="full">Full
+    <br>
+    <input type="radio" name="build" value="fit">Fit
+    <br>
+    <input type="radio" name="build" value="muscular">Muscular
+  <br>
+</fieldset>
+</td>
+</tr>
+</table>
+<br>
+<input type="submit" value="Submit">
+<form action="action_page.php">
+</form>
+		</div>
+		<div id="Torso" class="info">
+			
+		</div>
+		<div id="Bottom" class="info">
+			
+		</div>
+	</div>
