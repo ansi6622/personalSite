@@ -1,16 +1,50 @@
 $(document).ready(function() {
-  $('td').on('mouseenter', function() {
+  $('#working').on('mouseenter', function() {
     $(this).addClass('highlight');
-    $(this).find('.bold').animate({'opacity': '1'});
+    $(this).animate({'opacity': '.5'});
   });
-  $('aside').on('mouseleave', function() {
+  $('#working').on('mouseleave', function() {
     $(this).removeClass('highlight');
   });
-  $('#tab').on('mouseenter', function() {
+  $('body').on('click', function() {
     $(this).addClass('highlight');
-    $(this).find('#tab').animate({'opacity': '1'});
+    $(this).animate({'opacity': '.9'});
   });
-  $("aside").click(function(){
-    $(this).aside("explode")
-  })
+  $('body').on('click', function() {
+    $(this).removeClass('highlight');
+  });
+
+  $('div').on('click', function() {
+    $(this).addClass('highlight');
+    $(this).animate({'opacity': '.7'});
+  });
+  $('div').on('click', function() {
+    $(this).removeClass('highlight');
+  });
+
+  $('section').on('click', function() {
+    $(this).addClass('highlight');
+    $(this).animate({'opacity': '.7'});
+  });
+  $('section').on('click', function() {
+    $(this).removeClass('highlight');
+  });
+  $('header').on('click', function() {
+    $(this).addClass('highlight');
+    $(this).animate({'opacity': '.5'});
+  });
+  $('header').on('click', function() {
+    $(this).removeClass('highlight');
+  });
+
+  var modWidth = 30;
+$("#right table tr #food img").on("mouseenter", function() {
+$(this).innerWidth(modWidth).addClass("mod");
+modWidth -= 8;
+});
+
+  $('#working').on('mouseenter', function() {
+    $(this).addClass('highlight');
+    $(this).animate({'opacity': '.9'});
+  });
 });
